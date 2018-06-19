@@ -1,0 +1,283 @@
+html
+{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body
+{
+  background-image: linear-gradient(to left top, #afd6e1, #afd6e1, #f7f4d6, #f7f4d6);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.container
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: auto;
+}
+.containerImg
+{
+  height: auto;
+  align-self: center;
+  margin: 3.5em 0 3.5em 0;
+  order: 1;
+}
+/*------internet----*/
+
+.shadow
+{
+  float: left;
+  box-shadow: 2px 0px 0 0px #e8eee8, 1px 1px 0 0.1px #e8eee8, 2px 2px 0 0.2px #e8eee8, 3px 3px 0 0.3px #e8eee8, 4px 4px 0 0.4px #e8eee8, 5px 5px 0 0.5px #e8eee8, 6px 6px 0 0.6px #e8eee8, 7px 7px 0 0.7px #e8eee8, 8px 8px 0 0.8px #e8eee8, 9px 9px 0 0.9px #e8eee8, 10px 10px 0 1px #e8eee8, 11px 11px 0 1.1px #e8eee8, 12px 12px 0 1.2px #e8eee8, 13px 13px 0 1.3px #e8eee8, 14px 14px 0 1.4px #e8eee8, 15px 15px 0 1.5px #e8eee8, 16px 16px 0 1.6px #e8eee8, 17px 17px 0 1.7px #e8eee8, 18px 18px 0 1.8px #e8eee8, 19px 19px 0 1.9px #e8eee8, 20px 20px 0 2px #e8eee8, 21px 21px 0 2.1px #e8eee8, 22px 22px 0 2.2px #e8eee8, 23px 23px 0 2.3px #e8eee8, 24px 24px 0 2.4px #e8eee8, 25px 25px 0 2.5px #e8eee8, 26px 26px 0 2.6px #e8eee8, 27px 27px 0 2.7px #e8eee8, 28px 28px 0 2.8px #e8eee8, 29px 29px 0 2.9px #e8eee8, 30px 30px 0 3px #e8eee8, 31px 31px 0 3.1px #e8eee8, 32px 32px 0 3.2px #e8eee8, 33px 33px 0 3.3px #e8eee8, 34px 34px 0 3.4px #e8eee8, 35px 35px 0 3.5px #e8eee8, 36px 36px 0 3.6px #e8eee8, 37px 37px 0 3.7px #e8eee8, 38px 38px 0 3.8px #e8eee8, 39px 39px 0 3.9px #e8eee8, 40px 40px 0 4px #e8eee8, 41px 41px 0 4.1px #e8eee8, 42px 42px 0 4.2px #e8eee8, 43px 43px 0 4.3px #e8eee8, 44px 44px 0 4.4px #e8eee8, 45px 45px 0 4.5px #e8eee8, 46px 46px 0 4.6px #e8eee8, 47px 47px 0 4.7px #e8eee8, 48px 48px 0 4.8px #e8eee8, 49px 49px 0 4.9px #e8eee8, 50px 50px 0 5px #e8eee8, 51px 51px 0 5.1px #e8eee8, 52px 52px 0 5.2px #e8eee8, 53px 53px 0 5.3px #e8eee8, 54px 54px 0 5.4px #e8eee8, 55px 55px 0 5.5px #e8eee8, 56px 56px 0 5.6px #e8eee8, 57px 57px 0 5.7px #e8eee8, 58px 58px 0 5.8px #e8eee8, 59px 59px 0 5.9px #e8eee8, 60px 60px 0 6px #e8eee8, 61px 61px 0 6.1px #e8eee8, 62px 62px 0 6.2px #e8eee8, 63px 63px 0 6.3px #e8eee8, 64px 64px 0 6.4px #e8eee8, 65px 65px 0 6.5px #e8eee8, 66px 66px 0 6.6px #e8eee8, 67px 67px 0 6.7px #e8eee8, 68px 68px 0 6.8px #e8eee8, 69px 69px 0 6.9px #e8eee8, 70px 70px 0 7px #e8eee8, 71px 71px 0 7.1px #e8eee8, 72px 72px 0 7.2px #e8eee8, 73px 73px 0 7.3px #e8eee8, 74px 74px 0 7.4px #e8eee8, 75px 75px 0 7.5px #e8eee8, 76px 76px 0 7.6px #e8eee8, 77px 77px 0 7.7px #e8eee8, 78px 78px 0 7.8px #e8eee8, 79px 79px 0 7.9px #e8eee8, 80px 80px 0 8px #e8eee8, 81px 81px 0 8.1px #e8eee8, 82px 82px 0 8.2px #e8eee8, 83px 83px 0 8.3px #e8eee8, 84px 84px 0 8.4px #e8eee8, 85px 85px 0 8.5px #e8eee8, 86px 86px 0 8.6px #e8eee8, 87px 87px 0 8.7px #e8eee8, 88px 88px 0 8.8px #e8eee8, 89px 89px 0 8.9px #e8eee8, 90px 90px 0 9px #e8eee8, 91px 91px 0 9.1px #e8eee8, 92px 92px 0 9.2px #e8eee8, 93px 93px 0 9.3px #e8eee8, 94px 94px 0 9.4px #e8eee8, 95px 95px 0 9.5px #e8eee8, 96px 96px 0 9.6px #e8eee8, 97px 97px 0 9.7px #e8eee8, 98px 98px 0 9.8px #e8eee8, 99px 99px 0 9.9px #e8eee8, 100px 100px 0 10px #e8eee8, 101px 101px 0 10.1px #e8eee8, 102px 102px 0 10.2px #e8eee8, 103px 103px 0 10.3px #e8eee8, 104px 104px 0 10.4px #e8eee8, 105px 105px 0 10.5px #e8eee8, 106px 106px 0 10.6px #e8eee8, 107px 107px 0 10.7px #e8eee8, 108px 108px 0 10.8px #e8eee8, 109px 109px 0 10.9px #e8eee8, 110px 110px 0 11px #e8eee8, 111px 111px 0 11.1px #e8eee8, 112px 112px 0 11.2px #e8eee8, 113px 113px 0 11.3px #e8eee8, 114px 114px 0 11.4px #e8eee8, 115px 115px 0 11.5px #e8eee8, 116px 116px 0 11.6px #e8eee8, 117px 117px 0 11.7px #e8eee8, 118px 118px 0 11.8px #e8eee8, 120px 120px 0 transparent;
+
+}
+/*----end----*/
+h2
+{
+  font-family: 'Pacifico', cursive;
+}
+label, input, p, h3, .remove, .plus
+{
+  font-family: 'Lato', sans-serif;
+}
+
+p, h3
+{
+  padding-left: 0.3em;
+}
+h3
+{
+  text-align: center;
+}
+
+.queryDiv
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background-color: rgba(255, 255, 255, 0.5);*/
+  background-color: #f2f6ef;
+  width: auto;
+  height: auto;
+  padding: 1em 4em 1em 4em;
+  margin: 2em;
+  border: 1px solid white;
+  align-self: center;
+  overflow: hidden;
+  order: 2;
+}
+
+.inputDiv
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  padding: 0.5em 1em 0.5em 1em;
+  margin: 0.5em 0 2em 0;
+}
+
+input, input:focus
+{
+ outline: none;
+ box-shadow: none;
+ border-style: none;
+ width: 80%;
+ height: 2.5em;
+ padding-left: 0.5em;
+ padding-right: 8em;
+ background-color: white;
+}
+
+.plus
+{
+ color: yellow;
+ font-weight: bold;
+ font-size: 2em;
+ padding: 0;
+}
+
+.plus:hover
+{
+  cursor: pointer;
+}
+
+
+.weatherDiv
+{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  order: 3;
+}
+/*Dynamic elements*/
+
+.weather
+{
+  padding: 0;
+  margin: 0.5em;
+  max-height: 9em;
+  max-width: 25%;
+  width: calc(100% * (1/4) - 10px - 1px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  border-radius: 2px;
+  /*overflow: auto;*/
+}
+
+.weather p
+{
+  margin: 0;
+  padding: 0;
+}
+
+.weatherImg
+{
+  height: 6em;
+  width: 6em;
+  margin: auto 0 auto 0.8em;
+  padding: 0.6em 0 0.6em 0;
+}
+
+.weatherImg img
+{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/*.status, .removeButton
+{
+  height: auto;
+}*/
+.status
+{
+  margin: 0.5em 0 0.5em 1.5em;
+}
+
+.tempDiv p
+{
+  font-size: 2em;
+  margin-top: 0.5em;
+}
+.locDiv p
+{
+  margin-bottom: 0.5em;
+}
+.celsius
+{
+  vertical-align: super;
+  font-size: small;
+}
+
+.tempDiv, .locDiv
+{
+  color: white;
+}
+.removeButton
+{
+  cursor: pointer;
+  margin: 10px 10px 0 1em;
+}
+
+.remove
+{
+  background-color: white;
+  padding: 0em 0.3em 0.1em 0.3em;
+  border-style: none;
+  border-radius: 50%;
+  box-shadow: 4px 4px  rgba(0,0,0,0.1);
+}
+
+/* background colors for divs, applied with js*/
+.sun
+{
+  background-color: #eb9861;
+}
+.rain
+{
+  background-color: #87dcef;
+}
+.cloudy
+{
+  background-color: #e4b162;
+}
+.snow
+{
+  background-color: #b5e5f1;
+}
+.thunder
+{
+  background-color: #328499;
+}
+
+/* Media query */
+
+@media only screen and (max-width: 700px)
+{
+  body
+  {
+    background-image: linear-gradient(to top, #afd6e1, #afd6e1, #f7f4d6, #f7f4d6);
+  }
+  .queryDiv
+  {
+    order: 2;
+    width: 100%;
+    padding: 0.5em 0.1em 0.5em 0.1em;
+    margin: 0;
+  }
+  .queryDiv h2
+  {
+    margin 0;
+  }
+  .inputDiv
+  {
+    margin: 0;
+    width: 90%;
+  }
+  .shadow
+  {
+    box-shadow: 0px 0px 0 0px #e8eee8;
+  }
+  .containerImg
+  {
+    align-self: center;
+    order: 6;
+    margin: 0.5em 0 0.3em 0;
+  }
+  .weatherDiv
+  {
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: nowrap;
+    order: 5;
+  }
+  /*Dynamic elements*/
+  .weather
+  {
+    max-width: 100%;
+    width: 85%;
+    margin: 0.5em auto 0.5em auto;
+  }
+
+  .remove
+  {
+    box-shadow: 0px 0px black;
+  }
+
+  .tempDiv p
+  {
+    margin-top: 0;
+    font-size: 3em;
+  }
+}

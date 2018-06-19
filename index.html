@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src=js/apiModule.js defer></script>
+    <script type="text/javascript" src=js/render.js defer></script>
+    <script type="text/javascript" src=js/storageHandler.js defer></script>
+    <script type="text/javascript" src=js/main.js defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Pacifico" rel="stylesheet">
+    <title>Vinnovera weather app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="containerImg">
+        <img src="images/logo.png" alt="vinnovera logotype">
+      </div>
+      <div class="queryDiv">
+        <h2>How's the weather in...</h3>
+        <div class="inputDiv shadow">
+          <label for="locationQuery">Location:</label>
+          <input type="text" name="location" id="locationQuery" value="">
+          <span class="plus" id="add">+</span>
+        </div>
+      </div>
+      <div id="weatherDiv" class="weatherDiv">
+      </div>
+    </div>
+  </body>
+</html>
