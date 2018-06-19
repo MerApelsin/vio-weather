@@ -42,7 +42,6 @@ function refresh()
 async function fetchAll()
 {
   let cities = storageHandler.getItems();
-  console.log(cities);
   if(cities != null)
   {
     //For each loop to handle the cities -> call to api -> draw. Error handling to remove the illegal query from storage

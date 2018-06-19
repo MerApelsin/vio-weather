@@ -62,7 +62,6 @@ h3
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*background-color: rgba(255, 255, 255, 0.5);*/
   background-color: #f2f6ef;
   width: auto;
   height: auto;
@@ -133,7 +132,6 @@ input, input:focus
   justify-content: space-between;
   align-content: space-between;
   border-radius: 2px;
-  /*overflow: auto;*/
 }
 
 .weather p
@@ -156,10 +154,6 @@ input, input:focus
   max-width: 100%;
 }
 
-/*.status, .removeButton
-{
-  height: auto;
-}*/
 .status
 {
   margin: 0.5em 0 0.5em 1.5em;
