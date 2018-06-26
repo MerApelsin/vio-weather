@@ -17,10 +17,20 @@ var apiModule = (function()
   async function getWeather(query)
   {
     let response = await fetchData(query);
-    weather = {city: response.location.name, country: response.location.country,
+    try
+    {
+      if(response.error != undefined) throw "faulty query";
+      weather = {city: response.location.name, country: response.location.country,
       temp: response.current.temp_c,
-      weatherIcon: response.current.condition.code};
+      weatherIcon: response.current.condition.code,
+      weatherQuery: query};
       return weather;
+    }
+    catch(err)
+    {
+      console.log("error, faulty query or no location found");
+      storageHandler.onRemove(query,true);
+    }
   }
 
   return {getWeather:getWeather};

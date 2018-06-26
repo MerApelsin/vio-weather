@@ -31,37 +31,20 @@ var storageHandler = (function()
     }
   }
 
-  //The remove function takes the cities name from the div as the inparameter - we fetch where in the parsed array
+  //The remove function takes the id from the div (which is the same as your query) to remove it - we fetch where in the parsed array
   //this item exists and splices it to get a modified array without the mentioned value. Then we put the modified array
   //into localstorage again.
   //queryError bool is as it sounds since bad requests don't have a div to remove but "real" requests do (since they display weather)
   function onRemove(item,queryError)
   {
     let removeItem = item.toLowerCase();
-    let spacedItem = "";
 
     let tempValue = localStorage.getItem("cities");
     let jsonArr = JSON.parse(tempValue);
 
     let index = jsonArr.indexOf(removeItem);
 
-    //this if "hell" is due to the fact that some querys won't need the whole word for it to work, unintentinall, while
-    //some perhaps do - such as "San diego", so this is to check first if we need to remove a space from the item or not.
-    if(index < 0)
-    {
-      //The query as-is is not found, check for first space and remove it + everything behind and try again
-      let spaceIndex = removeItem.indexOf(' ');
-      if(spaceIndex > -1)
-      {
-        spacedItem = removeItem.substring(0, spaceIndex);
-        let tempInd = jsonArr.indexOf(spacedItem);
-        if(tempInd > -1)
-        {
-          jsonArr.splice(tempInd,1);
-        }
-      }
-    }
-    else if(index > -1) //query is found directly - as-is - remove it.
+    if(index > -1) //query is found and remove it.
     {
       jsonArr.splice(index,1);
     }

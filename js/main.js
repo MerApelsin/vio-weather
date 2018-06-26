@@ -44,19 +44,11 @@ async function fetchAll()
   let cities = storageHandler.getItems();
   if(cities != null)
   {
-    //For each loop to handle the cities -> call to api -> draw. Error handling to remove the illegal query from storage
-    //Will screw up if you've managed to save an illegal query to begin with - hence the tempClear(); function in storageHandler
-    //isn't removed.
+    //For each loop to handle the cities -> call to api -> draw.
     cities.forEach(city => {
     apiModule.getWeather(city).then(weatherInfo =>
       {
         renderElement.drawWeather(weatherInfo);
-      }).catch(function(error)
-      {
-        console.log("There was an error!");
-        console.log(error);
-        storageHandler.onRemove(city,true);
-      });
-    });
+      });});
   }
 }

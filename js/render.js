@@ -3,18 +3,19 @@ var renderElement = (function()
 {
   //potentially you could take what div the element is going to get appended to as an inparameter too.
   //Make all the elements and fill them with the info for *this* weather. Outside only drawWeather should be called
-  //since getIcon is an internal function for the main function - drawWeather.
+  //since getGraphics is an internal function for the main function - drawWeather.
   //In the event of pinned weathers the idea is to loop this function
-  //We put the ID of the "specificWeather" div to the city it's drawing, in order to be able to remove that div when pressing the 'x'.
+  //We put the ID of the "specificWeather" div to the inputed query, in order to be able to remove that div when pressing the 'x'
+  //and removing it from localStorage.
   function drawWeather(weatherInfo)
   {
-    if(weatherInfo.weatherIcon != "undefined") //This if-case is only needed due to "bad" error handling :(
+    if(weatherInfo != undefined) //This if-case is only needed due to "bad" error handling :(
     {
       const parentDiv = document.getElementById("weatherDiv");
-      let colorSources = getIcon(weatherInfo.weatherIcon);
+      let colorSources = getGraphics(weatherInfo.weatherIcon);
       const specificWeather = document.createElement("div");
       specificWeather.setAttribute("class", "weather " + colorSources.class);
-      specificWeather.setAttribute("id", weatherInfo.city)
+      specificWeather.setAttribute("id", weatherInfo.weatherQuery)
 
       const imgDiv = document.createElement("div");
       imgDiv.setAttribute("class", "weatherImg");
@@ -57,7 +58,7 @@ var renderElement = (function()
       xspan.setAttribute("class","remove");
       xspan.innerHTML = "x";
       xspan.style.color = colorSources.font;
-      xspan.onclick=function(){storageHandler.onRemove(city,false);}
+      xspan.onclick=function(){storageHandler.onRemove(weatherInfo.weatherQuery,false);}
       removeDiv.appendChild(xspan);
 
       specificWeather.appendChild(imgDiv);
@@ -71,7 +72,7 @@ var renderElement = (function()
   //since we get a code from the API we match em up to an icon that represents that value.
   //The spec doesn't say what background colors or how they are decided - this is my interpretation of it.
   //We also makes it return another css class(which only contains a background color+font color for the x to match) to make it match the icon
-  function getIcon(weatherIcon)
+  function getGraphics(weatherIcon)
   {
       switch(weatherIcon)
       {
